@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Citas Dentales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Citas Dentales</h1>
+        </header>
+        
+        <div class="date-navigation">
+            <button id="prevDay">Día Anterior</button>
+            <span id="currentDate">Hoy</span>
+            <button id="nextDay">Día Siguiente</button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar paciente por DNI">
+            <button id="searchButton">Buscar</button>
+        </div>
+        
+        <div class="appointment-actions">
+            <button id="addAppointment">Agregar Cita</button>
+        </div>
+        
+        <div class="table-container">
+            <table id="appointmentTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Hora</th>
+                        <th>Día</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentTableBody">
+                    <!-- Appointment data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
